@@ -1,7 +1,8 @@
 import React, { Component, useState, useEffect } from 'react'
-import CreateTweet from '../components/CreateTweet'
+
 import Nav from '../components/Nav'
 import Profilebar from '../components/Profilebar'
+import CreateItem from './admin/CreateItem'
 import Tweet from './Tweet'
 
 const TweetAPI = () => {
@@ -20,9 +21,6 @@ const TweetAPI = () => {
      
     setTweets(data); 
     console.log(data); 
-
-    
-    
     
 } 
 
@@ -33,7 +31,7 @@ return (
 
             
                 <div>
-                    <CreateTweet
+                    <CreateItem
             
                      />
                 </div>
