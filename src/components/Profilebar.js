@@ -4,7 +4,7 @@ export class Profilebar extends Component {
     render() {
         return (
             <div>
-                Hilles profil
+                <h2>Hilles profil</h2>
             </div>
         )
     }

@@ -8,6 +8,7 @@ import {
   Switch, 
   Route
 } from 'react-router-dom';
+import { Link } from "react-router-dom"
 
 
 function App() {
@@ -15,16 +16,17 @@ function App() {
     <Router>
     <div className="App">
     <Nav/>
+    
+      <Switch>
+        <Route path="/tweets" exact component={Tweets} />
+        <Route path="/manage-tweets" exact component={ManageTweets} />
+      </Switch>
 
-    <Switch>
-      <Route path="/" exact component={Tweets} />
       
-    </Switch>
 
-      FNITTER
-      <Tweets />
+    {/* FNITTER
+      <Tweets /> */}
 
-      Admin
     </div>
     </Router>
   );

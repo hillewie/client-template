@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class CreateTweet extends Component {
-    render() {
+function CreateTweet() {
+    
         return (
             <div>
                 Skapa ett fniss
@@ -24,7 +24,7 @@ export class CreateTweet extends Component {
                 
             </div>
         )
-    }
+    
 }
 
 export default CreateTweet
