@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import TweetForm from '../../components/TweetForm'
+import styled from 'styled-components';
 
 
 function CreateItem() {
@@ -41,7 +42,7 @@ function CreateItem() {
     }
         return (
             <div>
-                <h1>Fnittra</h1>
+                {/* <Title>Fnittra</Title> */}
                 
                <TweetForm
                                handleSubmit={handleSubmit}

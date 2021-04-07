@@ -1,8 +1,8 @@
-import React, { Component, useState, useEffect } from 'react'
+import React, {useState, useEffect } from 'react'
 
 import Nav from '../components/Nav'
 import Profilebar from '../components/Profilebar'
-import CreateItem from './admin/CreateItem'
+import CreateTweet from '../components/CreateTweet'
 import Tweet from './Tweet'
 
 const TweetAPI = () => {
@@ -31,7 +31,7 @@ return (
 
             
                 <div>
-                    <CreateItem
+                    <CreateTweet
                     
             
                      />

@@ -1,17 +1,18 @@
 import React from 'react'
+import styled from 'styled-components';
 import {Link} from "react-router-dom";
 
 function TweetForm({handleSubmit, handleChange, tweet, tweetId }) {
     return (
-        <form onSubmit={handleSubmit}>
-            <input
+        <TweetFormStyle onSubmit={handleSubmit}>
+            <Input
                 name="title"
                 value={tweet.title}
                 onChange={handleChange}
                 placeholder="Ange fnitterrubrik.."
 
             />
-            <input
+            <Input
                 name="author"
                 value={tweet.author}
                 onChange={handleChange}
@@ -25,7 +26,7 @@ function TweetForm({handleSubmit, handleChange, tweet, tweetId }) {
                 cols="30" 
                 rows="10"
             />
-            <input
+            <Input
                 name="tags"
                 value={tweet.tags}
                 onChange={handleChange}
@@ -48,8 +49,19 @@ function TweetForm({handleSubmit, handleChange, tweet, tweetId }) {
             <br />
             <br />
             <Link to="/manage-tweets">&larr; Back</Link>
-        </form>
+        </TweetFormStyle>
     )
 }
+
+const TweetFormStyle = styled.form`
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    text-align: left;
+`;
+
+const Input = styled.input`
+  width: 98%;
+  padding: 5px;
+`;
 
 export default TweetForm
