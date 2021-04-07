@@ -41,7 +41,7 @@ function CreateTweet() {
 
     }
         return (
-            <div>
+            <div className="feed-header">
                 {/* <Title>Fnittra</Title> */}
                 
                <TweetForm

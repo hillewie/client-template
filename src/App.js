@@ -10,7 +10,9 @@ import {
   Switch, 
   Route
 } from 'react-router-dom';
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+
+
 
 
 function App() {
@@ -27,8 +29,8 @@ function App() {
 
       
 
-    {/* FNITTER
-      <Tweets /> */}
+    
+      {/* <Tweets /> */}
 
     </Wrapper>
     </Router>
@@ -37,7 +39,7 @@ function App() {
 
 const Wrapper = styled.section`
   padding: 4em;
-  background: papayawhip;
+  
 `;
 
 export default App;

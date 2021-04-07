@@ -1,10 +1,12 @@
 .App {
-  text-align: center;
-  font-family: 'Indie Flower', cursive;
   
+  font-family: 'Indie Flower', cursive;
+  background-color: rgba(175, 192, 184, 0.699);
+  height: 200vh; 
+  width: 100%; 
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -37,4 +39,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
