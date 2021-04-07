@@ -1,4 +1,5 @@
 import React from 'react'
+import "../css/Tweet.css"
 
 const Tweet = ({tweets, deleteTweet}) => {
     // let tweetDate = new Date(tweet.date);
@@ -10,14 +11,14 @@ const Tweet = ({tweets, deleteTweet}) => {
 
     return (
         
-        <div>
+        <div className="fnitter-list">
             
             {tweets.map((tweet, deleteTweet) => (
                 <div key={tweet['_id']}
                     tweet={tweet}
                     deleteTweet={deleteTweet}
                     >
-                    <ul>
+                    <ul >
                     {/* {`${tweetDate.getFullYear()}-${tweetDate.getMonth()}-${tweetDate.getDate()}`} */}
 
                         <li>title: {tweet.title}</li>

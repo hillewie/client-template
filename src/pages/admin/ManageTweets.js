@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import Profilebar from '../../components/Profilebar';
+
 import TweetTable from '../../components/TweetTable';
 
 
@@ -49,7 +49,7 @@ const deleteTweet = async (tweetId) => {
                 /> 
             </div>
 
-            <Profilebar/>
+          
         </div>
     )
 }
