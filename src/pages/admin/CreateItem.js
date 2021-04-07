@@ -6,6 +6,8 @@ function CreateItem() {
     const [tweet, setTweet] = useState({});
     // const history = useHistory(); // Initate
     // console.log(history);
+
+    
  
     const handleChange = (e) => {
         const name = e.target.name;
@@ -36,6 +38,7 @@ function CreateItem() {
             console.log(error);
         }
 
+    }
         return (
             <div>
                 <h1>Fnittra</h1>
@@ -44,11 +47,12 @@ function CreateItem() {
                                handleSubmit={handleSubmit}
                                handleChange={handleChange}
                                tweet={tweet}
+                               tweetId="create-page"
                />
                 
             </div>
         )
-    }
+        
 }
 
 export default CreateItem

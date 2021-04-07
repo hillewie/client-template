@@ -3,7 +3,10 @@ import Profilebar from '../../components/Profilebar';
 import TweetTable from '../../components/TweetTable';
 
 
-function ManageTweets() {
+function ManageTweets({match}) {
+
+    
+    console.log('tweetId:', match.params.id);
     const [tweets, setTweets] = useState([]);
 
      useEffect(() => {
@@ -11,7 +14,7 @@ function ManageTweets() {
     }, [])
     
     const fetchTweets = async () => {
-        const url = `http://localhost:5000/posts`;
+        const url = `http://localhost:5000/posts/`;
     
         const response = await fetch(url);
         const data = await response.json();
@@ -19,6 +22,8 @@ function ManageTweets() {
         setTweets(data); 
         console.log(data); 
 }
+
+
 
 const deleteTweet = async (tweetId) => {
     try {
@@ -40,6 +45,7 @@ const deleteTweet = async (tweetId) => {
             <div>
                 <TweetTable 
                     tweets={tweets}
+                    deleteTweet={deleteTweet}
                 /> 
             </div>
 
