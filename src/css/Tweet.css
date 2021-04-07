@@ -1,3 +1,17 @@
+.fnitter-list {
+    box-sizing: border-box;
+}
 .fnitter-list ul {
     list-style-type: none;
+    width: 700px;
+    min-height: 120px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    background-color: rgb(219, 241, 236); 
 }
+
+.fnitter-list ul li {
+    padding: 1px;
+ 
+}
+

@@ -1,15 +1,17 @@
 .main-container {
-  text-align: center;
-  display: flex; 
-  flex-direction: column;
-  float: left; 
-  
-  
+    display: flex; 
+    flex-direction: column;
+    float: left; 
+    position: relative;
   }
 
 .tweet-boxes {
-  display: flex; 
-  flex-direction: column;
+  
+}
+
+.main-container h1{
+    font-size: 40px;
+    text-align: center;
 }
 
 

@@ -18,7 +18,8 @@ import { Link } from "react-router-dom";
 function App() {
   return (
     <Router>
-    <Wrapper className="App">
+    <div className="App">
+      <h1>Fnitter</h1>
     <Nav/>
     
       <Switch>
@@ -32,14 +33,10 @@ function App() {
     
       {/* <Tweets /> */}
 
-    </Wrapper>
+    </div>
     </Router>
   );
 }
 
-const Wrapper = styled.section`
-  padding: 4em;
-  
-`;
 
 export default App;

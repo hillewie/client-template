@@ -1,0 +1,35 @@
+.tweetTable table {
+    position: relative;
+    width: 700px;
+    height: 10px;
+    padding: 5px 10px;
+    background-color: #f8f8f8;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    margin: 10px;
+}
+.tweetTable th {
+    position: relative;
+    width: 100px;
+    text-align: left;
+    
+}
+.tweetTable td {
+    position: relative;
+    width: 120px;
+    
+}
+.tableContent {
+    width: 300px;
+}
+
+.tweetTable button {
+    background: palevioletred;
+    color: white;
+    font-size: 1em;
+    margin: 1em;
+    padding: 0.25em 1em;
+    border: 2px solid palevioletred;
+    border-radius: 3px;
+  ;
+}

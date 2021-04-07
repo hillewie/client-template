@@ -18,33 +18,28 @@ function TweetForm({handleSubmit, handleChange, tweet, tweetId }) {
                 value={tweet.author}
                 onChange={handleChange}
                 placeholder="Ange ditt namn.."
-
             />
             <textarea 
                 name="content" 
                 value={tweet.content} 
                 onChange={handleChange}
-                cols="30" 
-                rows="10"
+                placeholder="Vad fnittrar du om?..."
             />
             <input 
                 name="tags"
                 value={tweet.tags}
                 onChange={handleChange}
                 placeholder="Taggar.."
-
+            
             />
+            <button> {tweetId === "update-page" ? "Update" : "Fnittra" }</button>  
 
             {
                 tweetId === "update-page" 
                     ? <p>Created at: {tweet.date}</p>
                     : ''
             }
-
-
-            <button> {tweetId === "update-page" ? "Update" : "Create" }</button>
-                
-            <br />            
+                    
         </form>
     )
 }
