@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-
+import "../../css/Manage.css";
 import TweetTable from '../../components/TweetTable';
 
 
@@ -39,7 +39,7 @@ const deleteTweet = async (tweetId) => {
 
 
     return (
-        <div>
+        <div className="manage">
             <h1>Manage Tweets</h1>
 
             <div>

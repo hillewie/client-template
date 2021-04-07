@@ -18,10 +18,9 @@ const Tweet = ({tweets, deleteTweet}) => {
                     tweet={tweet}
                     deleteTweet={deleteTweet}
                     >
-                    <ul >
+                    <ul>
                     {/* {`${tweetDate.getFullYear()}-${tweetDate.getMonth()}-${tweetDate.getDate()}`} */}
-
-                        <li>title: {tweet.title}</li>
+                        <li className="fnitter-list-titel">Title:{tweet.title}</li>
                         <li>author: {tweet.author}</li>
                         <li>content: {tweet.content}</li> 
                         <li>tags: {tweet.tags}</li> 

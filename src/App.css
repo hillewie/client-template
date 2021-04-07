@@ -1,9 +1,15 @@
 .App {
-  
   font-family: 'Indie Flower', cursive;
   background-color: rgba(175, 192, 184, 0.699);
   height: 200vh; 
   width: 100%; 
+}
+
+.App h1{
+  font-size: 49px;
+  margin: 0;
+  text-align: center;
+  color:#75c4df;
 }
 
 /* .App-logo {

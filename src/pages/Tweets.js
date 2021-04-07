@@ -1,6 +1,7 @@
 import React, {useState, useEffect } from 'react'
 import CreateTweet from '../components/CreateTweet'
 import Tweet from './Tweet'
+import '../css/Tweets.css'
 
 
 const TweetAPI = () => {
@@ -26,8 +27,6 @@ const TweetAPI = () => {
 
 return (
         <div className="main-container">
-
-            
                 <div>
                     <CreateTweet
                     
