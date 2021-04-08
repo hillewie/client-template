@@ -5,12 +5,15 @@ import Tweets from './pages/Tweets.js';
 import Nav from './components/Nav';
 import ManageTweets from './pages/admin/ManageTweets';
 import CreateItem from './pages/admin/CreateItem'
+import FetchSingleTweet from "./pages/FetchSingleTweet"
 import { 
   BrowserRouter as Router, 
   Switch, 
   Route
 } from 'react-router-dom';
 import { Link } from "react-router-dom";
+
+
 
 
 
@@ -24,11 +27,12 @@ function App() {
     
       <Switch>
         <Route path="/tweets" exact component={Tweets} />
-        <Route path="/manage-tweets" exact component={ManageTweets} />
-        <Route path="/create-item" exact component={CreateItem} />
+        <Route path="/manage-tweets" component={ManageTweets} />
+        <Route path="/create-item"  component={CreateItem} />
+        <Route path='/single-tweet/:id' component={FetchSingleTweet}/>
       </Switch>
 
-      
+      {/* <SingleTweetTable/> */}
 
     
       {/* <Tweets /> */}

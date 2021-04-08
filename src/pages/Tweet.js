@@ -1,5 +1,7 @@
 import React from 'react'
 import "../css/Tweet.css"
+import {Link} from "react-router-dom";
+
 
 const Tweet = ({tweets, deleteTweet}) => {
     // let tweetDate = new Date(tweet.date);
@@ -24,6 +26,8 @@ const Tweet = ({tweets, deleteTweet}) => {
                         <li>author: {tweet.author}</li>
                         <li>content: {tweet.content}</li> 
                         <li>tags: {tweet.tags}</li> 
+                        <Link to={`/single-tweet/${tweet['_id']}`}>Se tweet</Link>
+
                     </ul>
                     
                 </div>

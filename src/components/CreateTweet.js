@@ -31,7 +31,8 @@ function CreateTweet() {
                 },
                 body: JSON.stringify(tweet) // body data type must match "Content-Type" header
             });
-    
+            
+            window.location.replace('/tweets') 
             // window.location.replace('/manage-puns') // redirects to the index.html page
             // A smoother redirecting, without a page reload
             // history.push('/manage-tweets')

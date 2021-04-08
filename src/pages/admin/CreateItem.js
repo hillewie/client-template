@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import TweetForm from '../../components/TweetForm'
 import styled from 'styled-components';
+import {Link} from "react-router-dom";
 
 
 function CreateItem() {
@@ -32,7 +33,7 @@ function CreateItem() {
                 body: JSON.stringify(tweet) // body data type must match "Content-Type" header
             });
     
-            // window.location.replace('/manage-puns') // redirects to the index.html page
+            window.location.replace('/manage-tweets') // redirects to the index.html page
             // A smoother redirecting, without a page reload
             // history.push('/manage-tweets')
         } catch (error) {
@@ -50,8 +51,9 @@ function CreateItem() {
                                tweet={tweet}
                                tweetId="create-page"
                />
-                
+                <Link to="/manage-tweets">&larr; Tillbaka</Link>
             </div>
+            
         )
         
 }

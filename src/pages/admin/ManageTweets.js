@@ -40,7 +40,7 @@ const deleteTweet = async (tweetId) => {
 
     return (
         <div className="manage">
-            <h1>Manage Tweets</h1>
+            
 
             <div>
                 <TweetTable 
